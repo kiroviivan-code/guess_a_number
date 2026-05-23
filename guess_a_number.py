@@ -9,7 +9,7 @@ print("I will choose a random number. You place your guesses. I will guide you. 
 while 1:
     a=input('Guess the number [1,100]: ')
 
-    if not a.isdigit():
+    if not a.isdigit() or int(a)>100 or int(a)<1:
         print('A number [1,100]!!!!')
         continue
     else:
